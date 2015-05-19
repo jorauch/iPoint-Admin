@@ -1,0 +1,138 @@
+.signin,
+.signup {
+    padding: 20px 0 100px 0;
+}
+
+body {
+    padding-top: 50px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.cover {
+    background: #595554;
+}
+
+.signin.cover .panel-default,
+.signup.cover .panel-default{
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 20px 40px 40px 40px;
+    border-color: rgba(46, 43, 43, 0.20);
+    background-color: rgba(60, 56, 55, 0.90);
+}
+
+.cover::after {
+    content: "";
+    background: #000 url(../img/bg.png)  no-repeat center center fixed;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.cover .panel-default label{
+    color: white;
+}
+
+.required {
+    color: red;
+    margin-left: 2px;
+    display: none;
+}
+
+.form-sign-up .required         { display: none;   }
+.form-sign-up.error .required   { display: inline; }
+
+
+
+.user-info {
+    padding: 10px 15px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.user-info p {
+    margin: 0;
+    color: #fff;
+}
+
+.user-info .line1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    opacity: .9;
+    font-size: 90%;
+}
+
+.user-info .line2 {
+    font-size: 80%;
+    opacity: .6;
+    line-height: 110%;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.dropdown-menu .glyphicon{
+    opacity: 0.5;
+    font-size:80%;
+    padding-right:7px;
+}
+
+.list-group-item-icon {
+    font-size:16px;
+    padding-right: 10px;
+}
+
+.public  .list-group-item-icon { opacity: 1.0;  color: forestgreen; }
+.draft   .list-group-item-icon { opacity: 0.4;  color: #000000000; }
+.waiting .list-group-item-icon { opacity: 0.5;  color: #000000000; }
+
+.public  .list-group-item-heading { opacity: 1.0; }
+.draft   .list-group-item-heading { opacity: 0.5; }
+.waiting .list-group-item-heading { opacity: 0.5; }
+
+.list-group-item-heading {
+    font-weight: bold;
+    color: #595554
+}
+
+.list-group-item-meta {
+    color: rgb(89, 85, 84);
+    font-size: 12px;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.company-font {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.edit-btn {
+    display: none;
+}
+
+.list-group-item:hover .edit-btn {
+    display: block;
+}
+
+.list-group-item:hover {
+    background: #f5f5f5;
+}
+
+.list-group-item {
+    padding: 20px 15px;
+}

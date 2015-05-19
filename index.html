@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Iphofen - Login</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/layout.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="cover vertical-center signin">
+
+<div class="panel panel-default">
+    <form class="form-signin">
+        <img src="img/logo-iphofen.png" alt="logo" style="width:100%; padding-bottom: 20px;">
+
+        <div class="form-group" style="border-top: 1px solid #adadad; padding-top:10px;">
+            <label for="inputVerein" class="sr-only" required autofocus>Verein</label>
+            <select name="name" id="inputVerein" class="form-control" style="margin-bottom: 5px;">
+                <option value=""> -- Verein auswählen -- </option>
+                <option value="1">1. FC Bayerm</option>
+                <option value="1">Borusia Dortmund</option>
+            </select>
+        </div>
+
+        <div class="form-group" style="border-bottom: 1px solid #adadad; padding-bottom:15px;">
+            <label for="inputPassword">Passwort <a href="new_password.html">(vergessen)</a></label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
+        </div>
+
+        <a href="list.html" class="btn btn-md btn-success btn-block" type="submit">Anmelden</a>
+    </form>
+</div>
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <p class="navbar-text text-center" style="width:100%">
+        Ihr Verrein ist noch nicht registriert?
+        <a href="signup.html">Registrieren</a>
+    </p>
+</nav>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

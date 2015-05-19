@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>Iphofen - Einträge</title>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/layout.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-wizard.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="top" class="list-items cover">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="list.html">
+                <img src="img/logo-iphofen-small.png" alt="logo" style="height:35px;">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="user-info">
+                    <p class="line1">1. FC Bayern</p>
+                    <p class="line2">user@domain.de</p>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" aria-label="Menue"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="profil.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profil</a></li>
+                    <li><a href="password.html"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Passwort</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Abmelden</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Achtung!</strong> Ihr neu erstellter Account wird momentan geprüft.
+    </div>
+</div>
+<div class="container">
+    <div class="panel panel-default" style="background-color: rgba(255,255,255,0.9);  margin: 30px auto; ">
+        <div class="panel-heading">
+
+            <p class="panel-title pull-left">
+                <a href="#" id="open-wizard" class="btn btn-sm btn-success" style="color:white">
+                    <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Neuer Eintrag
+                </a>
+            </p>
+
+            <div class="pull-right">
+                Filter: &nbsp;&nbsp;
+                <div class="btn-group btn-group-sm" role="group" aria-label="Filter">
+                    <button type="button" class="btn btn-default active"><span class="glyphicon glyphicon-edit"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-time"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span></button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+
+        </div>
+        <div class="list-group" style="min-height: 400px; overflow-y: auto;">
+
+            <div class="list-group-item public clearfix">
+                <span class="list-group-item-icon glyphicon glyphicon-eye-open pull-left"></span>
+                <div class="pull-left">
+                    <h4 class="list-group-item-heading company-font">List group item heading</h4>
+                    <p class="list-group-item-meta">#00032 &middot; <span class="meta-lable">Erstellt</span> <strong>20.03.2015</strong> &middot; Veröffentlicht: 30.03.2015</p>
+                </div>
+
+                <div class="btn-group pull-right edit-btn">
+                    <button type="button" class="btn btn-primary">Bearbeiten</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Bearbeiten</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Vorschau</a></li>
+                        <li class="disabled"><a href="#"><span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Veröffentlichen</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Löschen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="list-group-item draft clearfix">
+                <span class="list-group-item-icon glyphicon glyphicon-edit pull-left"></span>
+                <div class="pull-left">
+                    <h4 class="list-group-item-heading company-font">List group item heading</h4>
+                    <p class="list-group-item-meta">#00032 &middot; <span class="meta-lable">Erstellt</span> <strong>20.03.2015</strong> &middot; Veröffentlicht: ---</p>
+                </div>
+
+                <div class="btn-group pull-right edit-btn">
+                    <button type="button" class="btn btn-warning">Veröffentlichen</button>
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Bearbeiten</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Vorschau</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Veröffentlichen</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Löschen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="list-group-item waiting clearfix">
+                <span class="list-group-item-icon glyphicon glyphicon-time pull-left"></span>
+                <div class="pull-left">
+                    <h4 class="list-group-item-heading company-font">List group item heading</h4>
+                    <p class="list-group-item-meta">#00032 &middot; <span class="meta-lable">Erstellt</span> <strong>20.03.2015</strong> &middot; Veröffentlicht: ---</p>
+                </div>
+
+                <div class="btn-group pull-right edit-btn">
+                    <button type="button" class="btn btn-primary">Bearbeiten</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Bearbeiten</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Vorschau</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Veröffentlichen</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Löschen</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="panel-footer">
+
+            <p class="panel-title pull-left">
+                <small><span class="value">Gesamt:</span> 5</small>
+            </p>
+
+            <div class="pull-right">
+                <a href="#top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-wizard.js"></script>
+
+<!--Wizzard https://github.com/amoffat/bootstrap-application-wizard -->
+<!--Docu1: https://github.com/amoffat/bootstrap-application-wizard -->
+<!--Docu2: http://www.panopta.com/2013/02/06/bootstrap-application-wizard-2/-->
+
+
+<div class="wizard" id="some-wizard" data-title="Neuer Eintrag">
+    <div class="wizard-card" data-cardname="card1">
+        <h3 class="hidden">Texte</h3>
+            <div class="form-group">
+                <label for="input-title" autofocus >Titel</label>
+                <input data-validate="validateTitle" type="text" class="form-control" id="input-title" placeholder="Titel">
+                <p class="help-block">Example help text here.</p>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="input-article"  >Text</label>
+                <textarea style="height:200px" class="form-control" id="input-article" placeholder="Text"></textarea>
+                <p class="help-block">Example help text here.</p>
+            </div>
+
+    </div>
+
+    <div class="wizard-card" data-cardname="card2">
+        <h3>Bilder</h3>
+        Some content
+    </div>
+
+    <div class="wizard-card" data-cardname="card3">
+        <h3 class="hidden">Meta-Daten</h3>
+
+        <div class="form-group">
+            <label for="input-city" autofocus >Ort</label>
+            <input type="text" class="form-control" id="input-city" placeholder="Veranstaltungsort">
+            <p class="help-block">z.B. Vereinsheim in Iphofen.</p>
+        </div>
+
+        <div class="form-group pull-left" style="width:48%">
+            <label for="input-start-date" >Datum (von)</label>
+            <input type="date" class="form-control" id="input-start-date">
+        </div>
+
+        <div class="form-group pull-right" style="width:48%">
+            <label for="input-end-date"  >Datum (bis)</label>
+            <input type="date" class="form-control" id="input-end-date">
+        </div>
+
+        <div class="form-group">
+            <label for="input-time">Uhrzeit</label>
+            <input type="text" class="form-control" id="input-time">
+            <p class="help-block">z.B. Montag bis Freitag</p>
+        </div>
+
+    </div>
+
+    <div class="wizard-card" data-cardname="card4">
+        <h3>Info-Box</h3>
+
+        <div class="form-group">
+            <label class="sr-only" for="input-info-box"  >Text</label>
+            <textarea style="height:200px" class="form-control" id="input-info-box" placeholder="Text"></textarea>
+            <p class="help-block">Example help text here.</p>
+        </div>
+    </div>
+
+    <div class="wizard-card" data-cardname="card5">
+        <h3 class="hidden">Veröffentlichungszeitraum</h3>
+        <div class="clearfix"></div>
+
+        <div class="form-group pull-left" style="width:48%">
+            <label for="input-start-date" >Datum (von)</label>
+            <input type="date" class="form-control" id="input-start-date">
+        </div>
+
+        <div class="form-group pull-right" style="width:48%">
+            <label for="input-end-date"  >Datum (bis)</label>
+            <input type="date" class="form-control" id="input-end-date">
+        </div>
+    </div>
+
+    <!-- begin special status cards below: -->
+
+    <div class="wizard-success">
+        submission succeeded!
+    </div>
+
+    <div class="wizard-error">
+        submission had an error
+    </div>
+
+    <div class="wizard-failure">
+        submission failed
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        var options = {
+            keyboard: false,
+            showCancel: false,
+            progressBarCurrent: true,
+            contentHeight : 450,
+            contentWidth : 960,
+            formClass: 'create-entry',
+            backdrop: true,
+            submitUrl: 'senden.php',
+            buttons :{
+                cancelText: "Abbrechen",
+                nextText: "Weiter",
+                backText: "Zurück",
+                submitText: "Speichern",
+                submittingText: "Senden..."
+            }
+        };
+
+        var wizard = $("#some-wizard").wizard(options);
+
+        $('#open-wizard').click(function(e) {
+            e.preventDefault();
+            wizard.show();
+        });
+    });
+
+    function validateTitle(el) {
+        var title = el.val();
+        var retValue = {};
+
+        if (title == "") {
+            retValue.status = false;
+            retValue.msg = "Bitte geben Sie einen Titel ein.";
+        }
+        else {
+            retValue.status = true;
+        }
+
+        return retValue;
+    }
+</script>
+
+<!-- ENDE Wizzard-->
+
+</body>
+
+</html>
