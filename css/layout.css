@@ -24,7 +24,7 @@ strong {
 
 .signin.cover .panel-default,
 .signup.cover .panel-default{
-    max-width: 360px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px 40px 40px 40px;
     border-color: rgba(46, 43, 43, 0.20);
