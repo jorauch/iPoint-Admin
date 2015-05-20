@@ -136,3 +136,18 @@ strong {
 .list-group-item {
     padding: 20px 15px;
 }
+
+.upload-images {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-images li{
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+}

@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/layout.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap-wizard.css" rel="stylesheet" media="screen">
+    <link href="vendors/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 
@@ -23,7 +24,11 @@
                 <img src="img/logo-iphofen-small.png" alt="logo" style="height:35px;">
             </a>
         </div>
+
         <ul class="nav navbar-nav navbar-right">
+            <li>
+                <p class="navbar-text company-font" style="color: #b6b6b6;"><span class="glyphicon glyphicon-bell" style="color: #e5e5e5;"></span> Ihr Verein ist <span style="text-decoration: underline">nicht</span> freigegeben und wird geprüft.</p>
+            </li>
             <li>
                 <div class="user-info">
                     <p class="line1">1. FC Bayern</p>
@@ -44,12 +49,7 @@
         </ul>
     </div>
 </nav>
-<div class="container">
-    <div class="alert alert-warning">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Achtung!</strong> Ihr neu erstellter Account wird momentan geprüft.
-    </div>
-</div>
+
 <div class="container">
     <div class="panel panel-default" style="background-color: rgba(255,255,255,0.9);  margin: 30px auto; ">
         <div class="panel-heading">
@@ -163,6 +163,8 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-wizard.js"></script>
+<script src="vendors/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+<script src="vendors/holder_js/holder.min.js"></script>
 
 <!--Wizzard https://github.com/amoffat/bootstrap-application-wizard -->
 <!--Docu1: https://github.com/amoffat/bootstrap-application-wizard -->
@@ -170,25 +172,173 @@
 
 
 <div class="wizard" id="some-wizard" data-title="Neuer Eintrag">
+
     <div class="wizard-card" data-cardname="card1">
         <h3 class="hidden">Texte</h3>
-            <div class="form-group">
-                <label for="input-title" autofocus >Titel</label>
-                <input data-validate="validateTitle" type="text" class="form-control" id="input-title" placeholder="Titel">
-                <p class="help-block">Example help text here.</p>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="input-article"  >Text</label>
-                <textarea style="height:200px" class="form-control" id="input-article" placeholder="Text"></textarea>
-                <p class="help-block">Example help text here.</p>
-            </div>
+        <div class="form-group">
+            <label for="input-title" autofocus >Titel</label>
+            <input data-validate="validateTitle" type="text" class="form-control" id="input-title" placeholder="Titel">
+            <p class="help-block">Example help text here.</p>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="input-article"  >Text</label>
+            <textarea style="height:200px" class="form-control" id="input-article" placeholder="Text"></textarea>
+            <p class="help-block">Example help text here.</p>
+        </div>
 
     </div>
 
     <div class="wizard-card" data-cardname="card2">
-        <h3>Bilder</h3>
-        Some content
+        <h3 class="hidden">Bilder</h3>
+
+        <ul class="upload-images">
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left"  type="text" id="image-title-1" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left" type="text" id="image-title-2" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left" type="text" id="image-title-3" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left" type="text" id="image-title-4" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left"  type="text" id="image-title-5" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="fileinput fileinput-new" data-provides="fileinput" style="width: 200px; height: 135px;">
+                    <div class="fileinput-new thumbnail">
+                        <img data-src="holder.js/200x135?auto=yes&text=Bild 1" alt="...">
+                    </div>
+                    <div class="text-center">
+                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 135px;"></div>
+
+                        <div class="fileinput-exists">
+                            <input class="form-control input-sm pull-left" type="text" id="image-title-6" placeholder="Bildunterschrift" style="width: 160px;">
+                            <a href="#" class="btn btn-danger btn-sm pull-right" data-dismiss="fileinput"><span class="glyphicon glyphicon-trash"></span></a>
+                        </div>
+
+                        <div class="fileinput-new">
+                            <span class="btn btn-success btn-sm btn-file btn-block">
+                                <span class="fileinput-new"><span class="glyphicon glyphicon-upload"></span> Datei auswählen</span>
+                                <!--<span class="fileinput-exists">Bearbeiten</span>-->
+                                <input type="file" name="..." accept=".jpg,.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
     </div>
+
+
+
+
+
+
 
     <div class="wizard-card" data-cardname="card3">
         <h3 class="hidden">Meta-Daten</h3>
@@ -233,12 +383,12 @@
 
         <div class="form-group pull-left" style="width:48%">
             <label for="input-start-date" >Datum (von)</label>
-            <input type="date" class="form-control" id="input-start-date">
+            <input type="date" class="form-control" id="input-start-date-1">
         </div>
 
         <div class="form-group pull-right" style="width:48%">
             <label for="input-end-date"  >Datum (bis)</label>
-            <input type="date" class="form-control" id="input-end-date">
+            <input type="date" class="form-control" id="input-end-date-1">
         </div>
     </div>
 
@@ -264,8 +414,8 @@
             keyboard: false,
             showCancel: false,
             progressBarCurrent: true,
-            contentHeight : 450,
-            contentWidth : 960,
+            contentHeight : 550,
+            contentWidth : 1000,
             formClass: 'create-entry',
             backdrop: true,
             submitUrl: 'senden.php',
@@ -290,7 +440,8 @@
         var title = el.val();
         var retValue = {};
 
-        if (title == "") {
+        // todo: remove Placeholdertext
+        if (title == "REMOVE") {
             retValue.status = false;
             retValue.msg = "Bitte geben Sie einen Titel ein.";
         }
@@ -300,6 +451,7 @@
 
         return retValue;
     }
+
 </script>
 
 <!-- ENDE Wizzard-->
